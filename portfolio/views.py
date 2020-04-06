@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from portfolio.models import User
 
-# Create your views here.
+
+def index(request):
+    return render(request, 'portfolio_app/index.html')
