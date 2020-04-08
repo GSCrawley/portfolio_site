@@ -11,4 +11,4 @@ A: views.py takes a web request and returns a web response.
 
 (5 Points) Why do we use 2 separate urls.py files? How do they interact? A: We use one urls.py file per app. They don't interact with each other, but rather with each app's views.py file.
 
-(5 Points) When is it desirable to split our code over multiple apps? Why would we want to do so? A: When there are Grouping the urls separately can be helpful because it keeps common urls in their own files and avoids the difficulties of making changes to one big urls.py file.
+(5 Points) When is it desirable to split our code over multiple apps? Why would we want to do so? A: Grouping the urls separately can be helpful because it keeps common urls in their own files and avoids the difficulties of making changes to one big urls.py file.
