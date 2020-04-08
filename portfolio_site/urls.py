@@ -1,7 +1,8 @@
-from django.conf.urls import url
-from portfolio import views
-from portfolio import portfolio
+from django.contrib import admin
+from django.urls import include, path
 
 urlpatterns = [
-    django.urls.path('', portfolio.urls, name='URLs')
+    path('', include('portfolio.urls')),
+    path('messages/', include('messageboard.urls')),
+    path('admin/', admin.site.urls),
 ]

@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf.urls import url
 from portfolio import views
+from portfolio.views import home
 
 
 urlpatterns = [
-    django.urls.path('admin/', admin.site.urls),
-    django.urls.path('', views.home, name='home'),
-    django.urls.path('', Home.as_view(), name='home'),
-    django.urls.path('', Home.as_view(), name='home'),
-    django.urls.path('blog/', include('blog.urls'))
+    path('admin/', admin.site.urls),
+    path('', views.home, name='home'),
+    path('contact/', views.contact, name='contact'),
+    path('greet/<str:name>/', views.greet_by_name, name='greet')
+
 ]
