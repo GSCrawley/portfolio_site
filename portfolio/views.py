@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from portfolio.models import User
 from django.shortcuts import HttpResponse
 
 def home(request):
